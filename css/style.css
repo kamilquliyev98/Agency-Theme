@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+#header {
+    background-color: #212529;
+    padding: 35px 0 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+#header .header {
+    margin: 0 100px 10px 100px;
+}
+
+#header .header .navbar-logo {
+    width: 17%;
+    float: left;
+    margin-left: 1rem;
+}
+
+#header .header .navbar-logo img {
+    width: 100%;
+}
+
+#header .header .menu {
+    float: right;
+    margin-right: 40px;
+}
+
+#header .header .menu .menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px;
+    margin-right: 1rem;
+    color: #fff;
+    line-height: 1px;
+    transition: color 0.15s;
+}
+
+#header .header .menu .menu-item:hover {
+    color: #ffc800;
+}
+
+#first {
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 260px 200px 200px 200px;
+}
+
+#first h3 {
+    font-size: 36px;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    line-height: 36px;
+}
+
+#first h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+#first a {
+    padding: 20px 40px;
+    background-color: #FFC800;
+    border: 1px solid #FFC800;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: 0.15s;
+}
+
+#first a:hover {
+    background-color: #cca000;
+    border-color: #bf9600;
+}
+
+#services,
+#portfolio,
+#about,
+#team {
+    text-align: center;
+    padding: 6rem;
+    overflow: auto;
+}
+
+#services .services-title h2,
+#portfolio .portfolio-title h2,
+#about .about-title h2,
+#team .team-title h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+#services .services-title h3,
+#portfolio .portfolio-title h3,
+#about .about-title h3,
+#team .team-title h3 {
+    font-style: italic;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+}
+
+#services .services-sections,
+#portfolio .portfolio-sections,
+#team .persons {
+    width: 99%;
+    margin: auto;
+}
+
+#services .services-sections .single-section,
+#portfolio .portfolio-sections .single-portfolio,
+#team .persons .single-person {
+    width: 33%;
+    float: left;
+}
+
+#services .services-sections .single-section img {
+    width: 124px;
+    padding: 20px;
+    background-color: #FFC800;
+    border-radius: 50%;
+}
+
+#services .services-sections .single-section h4 {
+    margin: 1rem auto;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    color: #212529;
+    ;
+}
+
+#services .services-sections .single-section p {
+    line-height: 1.75;
+    margin-top: 0 auto 1rem;
+    padding: 0 2.5rem;
+}
+
+#clear {
+    clear: both;
+}
+
+#portfolio,
+#team {
+    background-color: #F8F9FA;
+}
+
+#portfolio .portfolio-sections .single-portfolio {
+    padding: 0 1rem 2.5rem;
+}
+
+#portfolio .portfolio-sections .single-portfolio .image a img {
+    width: 100%;
+    transition: filter 0.2s;
+}
+
+#portfolio .portfolio-sections .single-portfolio .image a img:hover {
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+#portfolio .portfolio-sections .single-portfolio .caption {
+    text-transform: capitalize;
+    background-color: #fff;
+    padding: 24px;
+}
+
+#portfolio .portfolio-sections .single-portfolio .caption h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #212529;
+}
+
+#portfolio .portfolio-sections .single-portfolio .caption p {
+    font-style: italic;
+}
+
+#about .about-sections .single-about,
+#brands .single-brand {
+    float: left;
+    width: 25%;
+    padding: 30px;
+}
+
+#about .about-sections .single-about .image img {
+    width: 100%;
+    border: 8px solid #E9ECEF;
+    filter: grayscale(0.7);
+    transition: 0.3s;
+}
+
+#about .about-sections .single-about .image img:hover {
+    border-radius: 50%;
+    filter: grayscale(0);
+}
+
+#about .about-sections .single-about .caption {
+    background-color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    border-radius: 10px;
+    padding-top: 1rem;
+}
+
+#about .about-sections .single-about .caption h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#about .about-sections .single-about .caption p {
+    font-style: italic;
+}
+
+#team .persons .single-person img {
+    width: 14rem;
+    border: 8px solid #E9ECEF;
+    border-radius: 50%;
+}
+
+#team .persons .single-person .info h4 {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #212529;
+}
+
+#team .persons .single-person .info p {
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+#team .team-text p {
+    line-height: 1.75;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0 17rem;
+}
+
+#brands .single-brand a img {
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+}
